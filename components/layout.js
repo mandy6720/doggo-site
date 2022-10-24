@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
+import AppBar from "../components/AppBar/appbar";
 
 const name = "Amanda";
 export const siteTitle = "Doggos!!!";
@@ -23,6 +24,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
+        <AppBar />
         {home ? (
           <>
             <Image
