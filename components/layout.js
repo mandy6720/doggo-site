@@ -5,8 +5,8 @@ import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
 import AppBar from "../components/AppBar/appbar";
 
-const name = "Amanda";
-export const siteTitle = "Doggos!!!";
+const name = "Odreman's Dobermans";
+export const siteTitle = "Odreman's Dobermans";
 
 export default function Layout({ children, home }) {
   return (
