@@ -29,7 +29,11 @@ function Copyright() {
 
 const cards = [1, 2, 3, 4, 5, 6];
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 export default function Album() {
   return (
