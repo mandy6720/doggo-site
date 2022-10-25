@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
       </Head>
       <header className={styles.header}>
         <AppBar />
-        {home ? (
+        {/* {home ? (
           <>
             <Image
               priority
@@ -57,7 +57,7 @@ export default function Layout({ children, home }) {
               </Link>
             </h2>
           </>
-        )}
+        )} */}
       </header>
       <main>{children}</main>
       {!home && (
