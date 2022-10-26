@@ -4,11 +4,10 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import CssBaseline from '@mui/material/CssBaseline';
+import Image from "next/image";
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
@@ -18,7 +17,7 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Odreman's Dobermans
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -41,6 +40,11 @@ export default function Album() {
           }}
         >
           <Container maxWidth="sm">
+            {/* <Image 
+              width={250}
+              height={250}
+              src="/public/images/OdremansDobermans.svg"
+            /> */}
             <Typography
               component="h1"
               variant="h2"
@@ -48,7 +52,7 @@ export default function Album() {
               color="text.primary"
               gutterBottom
             >
-              Album layout
+              Odreman's Dobermans
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               Something short and leading about the collection below—its contents,
