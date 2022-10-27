@@ -39,25 +39,24 @@ export default function Album() {
             pb: 6,
           }}
         >
-          <Container maxWidth="sm">
-            {/* <Image 
+          <Container maxWidth="sm" sx={{textAlign: 'center'}}>
+            <Image 
               width={250}
               height={250}
-              src="/public/images/OdremansDobermans.svg"
-            /> */}
+              src="/images/OdremansDobermansWhite1.png"
+            />
             <Typography
               component="h1"
               variant="h2"
               align="center"
               color="text.primary"
               gutterBottom
+              sx={{display: 'none'}}
             >
               Odreman's Dobermans
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Something short and leading about the collection below—its contents,
-              the creator, etc. Make it short and sweet, but not too short so folks
-              don&apos;t simply skip over it entirely.
+            Welcome to Oderman's Dobermans!  Changing the way families connect with their ideal puppy and BEING THE SINGLE SOURCE SOLUTION WHEN IT COMES TO YOUR DOGS NEEDS. 
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -65,8 +64,8 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Main call to action</Button>
-              <Button variant="outlined">Secondary action</Button>
+              <Button variant="contained">About Us</Button>
+              <Button variant="outlined">Our Puppies</Button>
             </Stack>
           </Container>
         </Box>
