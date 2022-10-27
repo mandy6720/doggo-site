@@ -56,7 +56,7 @@ export default function Album() {
               Odreman's Dobermans
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-            Welcome to Oderman's Dobermans!  Changing the way families connect with their ideal puppy and BEING THE SINGLE SOURCE SOLUTION WHEN IT COMES TO YOUR DOGS NEEDS. 
+            Welcome to Oderman's Dobermans!  Changing the way families connect with their ideal puppy and being the single source solution when it somes to your dog's needs. 
             </Typography>
             <Stack
               sx={{ pt: 4 }}
