@@ -25,11 +25,11 @@ export default function Layout({ children, home }) {
       </Head>
       <header className={styles.header}>
         <AppBar />
-        {/* {home ? (
+        {home ? (
           <>
             <Image
               priority
-              src="/images/OdremansDobermans.svg"
+              src="/images/OdremansDobermansWhite1.png"
               className={utilStyles.borderCircle}
               height={250}
               width={250}
@@ -57,7 +57,7 @@ export default function Layout({ children, home }) {
               </Link>
             </h2>
           </>
-        )} */}
+        )}
       </header>
       <main>{children}</main>
       {!home && (
