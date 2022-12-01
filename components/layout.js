@@ -4,6 +4,7 @@ import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
 import AppBar from "../components/AppBar/appbar";
+import { HeroImage } from "../components/Hero";
 
 const name = "Odreman's Dobermans";
 export const siteTitle = "Odreman's Dobermans";
@@ -25,6 +26,7 @@ export default function Layout({ children, home }) {
       </Head>
       <header className={styles.header}>
         <AppBar />
+        <HeroImage />
         {home ? (
           <>
             <Image
