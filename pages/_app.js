@@ -1,10 +1,10 @@
 import "../styles/global.scss";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
+import { black } from '@mui/material/colors';
 
 const darkTheme = createTheme({
   palette: {
-    mode: "dark",
+    mode: "dark"
   },
 });
 

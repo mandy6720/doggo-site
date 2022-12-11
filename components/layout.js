@@ -33,9 +33,9 @@ export default function Layout({ children, home }) {
               priority
               src="/images/OdremansDobermansWhite1.png"
               className={utilStyles.borderCircle}
-              height={250}
-              width={250}
-              alt=""
+              height={400}
+              width={400}
+              alt="Odreman's Dobermans Logo"
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
