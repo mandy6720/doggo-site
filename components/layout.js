@@ -37,4 +37,5 @@ export default function Layout({ children }) {
               alt="Odreman's Dobermans Logo"
             /></h1>
             </Box>
-          <main>{children}</main></div>)}
+          <main>{children}</main>
+          </div>)}
