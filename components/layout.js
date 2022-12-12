@@ -26,7 +26,7 @@ export default function Layout({ children }) {
       </Head>
       <header className={styles.header} />
         <AppBar />
-        <Box className="hero-image">
+        <Box className="hero-image">]
             <Image
               priority
               src="/images/OdremansDobermansWhite1.png"
