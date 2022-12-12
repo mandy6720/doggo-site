@@ -27,14 +27,14 @@ export default function Layout({ children }) {
       <header className={styles.header} />
         <AppBar />
         <Box className="hero-image">]
-            <Image
+            <h1 className={utilStyles.heading2Xl} className="hero-text"><Image
+            className="hero-text"
               priority
               src="/images/OdremansDobermansWhite1.png"
               className={utilStyles.borderCircle}
               height={400}
               width={400}
               alt="Odreman's Dobermans Logo"
-            />
-            <h1 className={utilStyles.heading2Xl} className="hero-text">{name}</h1>
+            /></h1>
             </Box>
           <main>{children}</main></div>)}
