@@ -18,7 +18,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section>
+      <section className="container">
       <h2 id="#about">About Us</h2>
       <span> "Our goal as a professional breeder is simple, to deliver American Dobermans with the highest standard of quality to new 
       owners. In order to make such a commitment in raising pups for new homes, we made a promise. The promise made is to ensure that 
