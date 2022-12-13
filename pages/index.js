@@ -1,44 +1,19 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.scss";
-import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
-import Date from "../components/date";
-import Album from "../components/Album/album";
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
-export default function Home({ allPostsData }) {
+export default function Home () {
   return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section>
-        <Album />
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li href={`/posts/${id}`} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
+      <section className="container">
+      <h2 id="#about">About Us</h2>
+      <span> "Our goal as a professional breeder is simple, to deliver American Dobermans with the highest standard of quality to new 
+      owners. In order to make such a commitment in raising pups for new homes, we made a promise. The promise made is to ensure that 
+      with love and compassion, these pups will be properly raised. The responsibility of bringing fragile lives into the world is a 
+      lifelong commitment from the Odremans. As we graduate a puppy from the litter to new families, we make it our MISSION to always 
+      be a single solution resource to inform, guide, and teach new members of our family!"</span>
       </section>
     </Layout>
   );

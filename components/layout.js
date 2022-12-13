@@ -2,13 +2,13 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.scss";
-import Link from "next/link";
-import AppBar from "../components/AppBar/appbar";
+import AppBar from "../components/AppBar";
+import { Box } from "@mui/material";
 
 const name = "Odreman's Dobermans";
 export const siteTitle = "Odreman's Dobermans";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -23,50 +23,18 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className={styles.header} />
         <AppBar />
-        {/* {home ? (
-          <>
-            <Image
+        <Box className="hero-image" >]
+            <h1 className={`${utilStyles.heading2Xl} hero-text`}><Image
               priority
-              src="/images/OdremansDobermans.svg"
-              className={utilStyles.borderCircle}
-              height={250}
-              width={250}
-              alt=""
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt=""
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )} */}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
-    </div>
-  );
-}
+              src="/images/OdremansDobermansWhite1.png"
+              className={`${utilStyles.borderCircle} hero-text`}
+              sx-{...{left: null, top: null, right: null, bottom:null}}
+              height={300}
+              width={300}
+              alt="Odreman's Dobermans Logo"
+            /></h1>
+            </Box>
+          <main className="body-margins">{children}</main>
+          </div>)}
