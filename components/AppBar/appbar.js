@@ -12,19 +12,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window?: () => Window;
-}
+import Link from '@mui/material/Link';
 
 const drawerWidth = 240;
-const navItems = ['About', 'Our dogs', 'Available Puppies', 'Contact'];
+const navItems = [{name:'About', link: "#about"}, {name:'Our Dogs', link: "#ourdogs"},{name:'Available Puppies', link: "#puppies"},{name:'Contact', link: "#contact"}];
 
-export default function DrawerAppBar(props: Props) {
+export default function DrawerAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -40,10 +33,12 @@ export default function DrawerAppBar(props: Props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item.link} disablePadding>
+            <Link href={`{"#${item.link}}`}>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={item.name} />
             </ListItemButton>
+            </Link>
           </ListItem>
         ))}
       </List>

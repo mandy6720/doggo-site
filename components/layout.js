@@ -26,16 +26,16 @@ export default function Layout({ children }) {
       </Head>
       <header className={styles.header} />
         <AppBar />
-        <Box className="hero-image">]
+        <Box className="hero-image" >]
             <h1 className={utilStyles.heading2Xl} className="hero-text"><Image
             className="hero-text"
               priority
               src="/images/OdremansDobermansWhite1.png"
               className={utilStyles.borderCircle}
-              height={400}
-              width={400}
+              height={300}
+              width={300}
               alt="Odreman's Dobermans Logo"
             /></h1>
             </Box>
-          <main>{children}</main>
+          <main className="body-margins">{children}</main>
           </div>)}
