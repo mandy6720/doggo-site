@@ -2,8 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.scss";
-import Link from "next/link";
-import AppBar from "../components/AppBar/appbar";
+import AppBar from "../components/AppBar";
 import { Box } from "@mui/material";
 
 const name = "Odreman's Dobermans";
@@ -27,11 +26,11 @@ export default function Layout({ children }) {
       <header className={styles.header} />
         <AppBar />
         <Box className="hero-image" >]
-            <h1 className={utilStyles.heading2Xl} className="hero-text"><Image
-            className="hero-text"
+            <h1 className={`${utilStyles.heading2Xl} hero-text`}><Image
               priority
               src="/images/OdremansDobermansWhite1.png"
-              className={utilStyles.borderCircle}
+              className={`${utilStyles.borderCircle} hero-text`}
+              sx-{...{left: null, top: null, right: null, bottom:null}}
               height={300}
               width={300}
               alt="Odreman's Dobermans Logo"
