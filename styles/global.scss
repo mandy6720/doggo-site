@@ -38,19 +38,21 @@ h1,h2, button {
 
 body, html {
   height: 100%;
+  display: flex;
 }
 
 /* The hero image */
 .hero-image {
 /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/chaparral.JPG");
-position: relative;
+display: flex;
 
 /* Set a specific height */
 height: 75vh;
 
 /* Position and center the image to scale nicely on all screens */
-background-position: center;
+justify-content: center;
+align-items: center;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
@@ -64,4 +66,9 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 color: white;
+}
+
+.body {
+  max-width: 1600px;
+  margin: auto 8%;
 }
