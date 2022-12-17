@@ -25,16 +25,8 @@ export default function Layout({ children }) {
       </Head>
       <header className={styles.header} />
         <AppBar />
-        <Box className="hero-image" >]
-            <h1 className={`${utilStyles.heading2Xl} hero-text`}><Image
-              priority
-              src="/images/OdremansDobermansWhite1.png"
-              className={`${utilStyles.borderCircle} hero-text`}
-              sx-{...{left: null, top: null, right: null, bottom:null}}
-              height={300}
-              width={300}
-              alt="Odreman's Dobermans Logo"
-            /></h1>
+        <Box className="hero-image" >
+            
             </Box>
-          <main className="body-margins">{children}</main>
+          <main className="body">{children}</main>
           </div>)}
