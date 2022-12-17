@@ -26,6 +26,6 @@ export default function Layout({ children }) {
         <AppBar />
         <Box className="hero-image" >
             <Image src="/images/OdremansDobermansWhite1.png" width={300} height={300}/>
-            </Box>
+          </Box>
           <main className="body">{children}</main>
           </div>)}
