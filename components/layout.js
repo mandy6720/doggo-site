@@ -26,7 +26,8 @@ export default function Layout({ children }) {
       <header className={styles.header} />
         <AppBar />
         <Box className="hero-image" >
-            
+            HEY
+            <img src="images/OdremansDobermansWhite1.png"/>
             </Box>
           <main className="body">{children}</main>
           </div>)}
