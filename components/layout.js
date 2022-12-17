@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.scss";
-import utilStyles from "../styles/utils.module.scss";
 import AppBar from "../components/AppBar";
 import { Box } from "@mui/material";
 
@@ -26,8 +25,7 @@ export default function Layout({ children }) {
       <header className={styles.header} />
         <AppBar />
         <Box className="hero-image" >
-            HEY
-            <img src="images/OdremansDobermansWhite1.png"/>
+            <Image src="/images/OdremansDobermansWhite1.png" width={300} height={300}/>
             </Box>
           <main className="body">{children}</main>
           </div>)}
