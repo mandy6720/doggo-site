@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import About from "../components/Sections/about"
+import Layout, { siteTitle } from "../components/Layout/layout";
+import About from "../components/Cards/about"
 
 export default function Home (children) {
   return (

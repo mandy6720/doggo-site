@@ -1,9 +1,9 @@
-import { Avatar } from '@mui/material';
+import { Box, Avatar } from "@mui/material";
 
 const Card  = (name, ltr=true ) => {
 
-  return (<section >
-    <Avatar variant='circular' src="../../public/images/generic dobie.png" />
+  return (<section id="about" className="card" sx={{marginTop:24}}>
+    <Avatar variant='circular' src="images/generic dobie.png" />
     <h1 id="about">About Us</h1>
   <span sx={{paddingTop: "16px"}}> "Our goal as a professional breeder is simple, to deliver American Dobermans with the highest standard of quality to new 
   owners. In order to make such a commitment in raising pups for new homes, we made a promise. The promise made is to ensure that 

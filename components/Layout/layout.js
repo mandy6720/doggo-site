@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.scss";
-import AppBar from "../components/AppBar";
+import AppBar from "../AppBar";
 import { Box } from "@mui/material";
 
 const name = "Odreman's Dobermans";
