@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.scss";
-import utilStyles from "../styles/utils.module.scss";
-import AppBar from "../components/AppBar";
+import AppBar from "../AppBar";
 import { Box } from "@mui/material";
 
 const name = "Odreman's Dobermans";
@@ -26,7 +25,7 @@ export default function Layout({ children }) {
       <header className={styles.header} />
         <AppBar />
         <Box className="hero-image" >
-            
-            </Box>
+            <Image src="/images/OdremansDobermansWhite1.png" width={300} height={300}/>
+          </Box>
           <main className="body">{children}</main>
           </div>)}

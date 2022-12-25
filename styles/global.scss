@@ -11,6 +11,7 @@ body {
   line-height: 1.6;
   font-size: 18px;
   color:#222222;
+  background-image: "../public/images/rustic-vintage-wooden-background_24837-264.png"
 }
 
 * {
@@ -31,9 +32,9 @@ img {
   display: block;
 }
 
-h1,h2, button {
-  font-family: "Varsity";
-  font-weight: 400;
+h1,h2, button, .MuiAppBar-root, .MuiTypography-h6 {
+  font-family: "Varsity" !important;
+  font-weight: 400 !important;
 }
 
 body, html {
@@ -70,5 +71,6 @@ color: white;
 
 .body {
   max-width: 1600px;
-  margin: auto 8%;
+  margin: auto 9%;
+  background-image: "/images/rustic-vintage-wooden-background_24837-264.png";
 }
