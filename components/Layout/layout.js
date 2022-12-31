@@ -23,9 +23,15 @@ export default function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header} />
-        <AppBar />
-        <Box className="hero-image" >
-            <Image src="/images/OdremansDobermansWhite1.png" width={300} height={300}/>
-          </Box>
-          <main className="body">{children}</main>
-          </div>)}
+      <AppBar />
+      <Box className="hero-image">
+        <Image
+          src="/images/OdremansDobermansWhite1.png"
+          width={300}
+          height={300}
+        />
+      </Box>
+      <main className="body">{children}</main>
+    </div>
+  );
+}
