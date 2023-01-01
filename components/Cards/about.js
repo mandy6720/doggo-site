@@ -1,5 +1,14 @@
 import { Box, Avatar } from "@mui/material";
 
+const styles = (theme) => ({
+  root: {
+    padding: theme.spacing(1),
+    [theme.breakpoints.down("md")]: {
+      backgroundColor: theme.palette.secondary.main,
+    },
+  },
+});
+
 const About = (name, ltr = true, id, img) => {
   return (
     <Box id="about" className="card" spacing={2}>
@@ -12,7 +21,14 @@ const About = (name, ltr = true, id, img) => {
           src="images/genericdobie.png"
           sx={{ width: 200, height: 200 }}
         />
-        <Box sx={{ paddingLeft: "24px" }}>
+        <Box
+          sx={{
+            paddingLeft: "24px",
+            "@media screen and (min-width: 450px)": {
+              flexDirection: "column",
+            },
+          }}
+        >
           Our goal as a professional breeder is simple, to deliver American
           Dobermans with the highest standard of quality to new owners. In order
           to make such a commitment in raising pups for new homes, we made a

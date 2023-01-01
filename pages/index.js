@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout/layout";
 import About from "../components/Cards/about";
-import { Box, Card } from "@mui/material";
+import { Box } from "@mui/material";
 import OurDogs from "../components/Cards/ourdogs";
+import Blockquote from "../components/Blockquote.js";
 
 export default function Home(children) {
   return (
@@ -12,6 +13,7 @@ export default function Home(children) {
       </Head>
       <Box marginTop={5}>
         <About name={"About Us"} />
+        <Blockquote className="varsity" />
         <OurDogs name={"Our Doggos"} />
       </Box>
     </Layout>
