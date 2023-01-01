@@ -1,10 +1,10 @@
 import { Box, Avatar } from "@mui/material";
 
-const Card = (name, ltr = true) => {
+const Card = (name, ltr = true, id, img) => {
   return (
     <Box id="about" className="card" spacing={2}>
-      <Box component="h2">
-        <h1 id="about">About Us</h1>
+      <Box component="h2" variant="h3" id="about">
+        About Us
       </Box>
       <Box sx={{ display: "flex" }}>
         <Avatar
