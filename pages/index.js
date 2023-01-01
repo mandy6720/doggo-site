@@ -10,7 +10,7 @@ export default function Home(children) {
         <title>{siteTitle}</title>
       </Head>
       <Box marginTop={5}>
-        <About />
+        <About name={"About Us"} />
       </Box>
     </Layout>
   );
