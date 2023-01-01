@@ -1,6 +1,6 @@
 import { Box, Avatar } from "@mui/material";
 
-const Card = (name, ltr = true, id, img) => {
+const About = (name, ltr = true, id, img) => {
   return (
     <Box id="about" className="card" spacing={2}>
       <Box component="h2" variant="h3" id="about">
@@ -28,4 +28,4 @@ const Card = (name, ltr = true, id, img) => {
   );
 };
 
-export default Card;
+export default About;
