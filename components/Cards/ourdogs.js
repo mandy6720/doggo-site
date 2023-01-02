@@ -1,4 +1,4 @@
-import { Box, Avatar } from "@mui/material";
+import { Box, Avatar, Typography } from "@mui/material";
 
 const OurDogs = (name, ltr = true, id, img) => {
   return (
@@ -12,11 +12,13 @@ const OurDogs = (name, ltr = true, id, img) => {
           src="images/genericdobie.png"
           sx={{ width: 200, height: 200, marginRight: "50px" }}
         />
+        <h3>Ladies</h3>
         <Avatar
           variant="circular"
           src="images/genericdobie.png"
           sx={{ width: 200, height: 200 }}
         />
+        <h3>Gents</h3>
       </Box>
     </Box>
   );

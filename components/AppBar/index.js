@@ -12,7 +12,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import Link from "@mui/material/Link";
 
 const drawerWidth = 240;
 const navItems = [
@@ -41,11 +40,13 @@ export default function DrawerAppBar(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.link} disablePadding>
-            <Link href={item.link}>
-              <ListItemButton sx={{ textAlign: "center" }}>
-                <ListItemText primary={item.name} />
-              </ListItemButton>
-            </Link>
+            <ListItemButton
+              sx={{ textAlign: "center" }}
+              component="a"
+              href={item.link}
+            >
+              <ListItemText primary={item.name} />
+            </ListItemButton>
           </ListItem>
         ))}
       </List>

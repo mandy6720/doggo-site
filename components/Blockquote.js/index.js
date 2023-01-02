@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 
 const Blockquote = (text) => {
   return (
-    <Box padding={2} sx={{ textAlign: "center" }}>
+    <Box padding={2} sx={{ textAlign: "center", marginTop: "1em" }}>
       <Typography>
         <h2>
           "Finding a cute puppy is easy - finding a cute puppy that is healthy,
