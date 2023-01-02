@@ -7,18 +7,36 @@ const OurDogs = (name, ltr = true, id, img) => {
         Our Dogs
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center" }} p={1}>
-        <Avatar
-          variant="circular"
-          src="images/genericdobie.png"
-          sx={{ width: 200, height: 200, marginRight: "50px" }}
-        />
-        <h3>Ladies</h3>
-        <Avatar
-          variant="circular"
-          src="images/genericdobie.png"
-          sx={{ width: 200, height: 200 }}
-        />
-        <h3>Gents</h3>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+            background: "pink",
+          }}
+        >
+          <Avatar
+            variant="circular"
+            src="images/genericdobie.png"
+            sx={{ width: 200, height: 200 }}
+          />
+          <h2>Ladies</h2>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+            background: "blue",
+          }}
+        >
+          <Avatar
+            variant="circular"
+            src="images/genericdobie.png"
+            sx={{ width: 200, height: 200 }}
+          />
+          <h2>Gents</h2>
+        </Box>
       </Box>
     </Box>
   );
