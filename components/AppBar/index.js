@@ -15,10 +15,10 @@ import Button from "@mui/material/Button";
 
 const drawerWidth = 240;
 const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Our Dogs", link: "#ourdogs" },
-  { name: "Available Puppies", link: "#puppies" },
-  { name: "Contact", link: "#contact" },
+  { name: "About", link: "/#about" },
+  { name: "Our Dogs", link: "/#ourdogs" },
+  { name: "Available Puppies", link: "/#puppies" },
+  { name: "Contact", link: "/#contact" },
 ];
 
 export default function DrawerAppBar(props) {
