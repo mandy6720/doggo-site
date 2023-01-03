@@ -3,7 +3,7 @@ import { Box, Avatar, Typography } from "@mui/material";
 const OurDogs = (name, ltr = true, id, img) => {
   return (
     <Box id="ourdogs" className="card" spacing={2}>
-      <Box component="h2" id="about">
+      <Box component="h1" id="about">
         Our Dogs
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center" }} p={1}>

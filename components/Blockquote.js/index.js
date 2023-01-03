@@ -8,7 +8,7 @@ const Blockquote = (text) => {
         <h2>
           "Finding a cute puppy is easy - finding a cute puppy that is healthy,
           happy and socialized -- from a responsible, reputable and honest
-          breeder is not so easy "
+          breeder is not so easy"
         </h2>
       </Typography>
     </Box>
