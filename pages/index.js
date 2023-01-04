@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 import OurDogs from "../components/Cards/ourdogs";
 import Blockquote from "../components/Blockquote.js";
 import AvailablePups from "../components/Cards/available-pups";
+import Contact from "../components/Cards/contact";
 
 export default function Home(children) {
   return (
@@ -17,6 +18,7 @@ export default function Home(children) {
         <Blockquote className="varsity" />
         <OurDogs name={"Our Doggos"} />
         <AvailablePups name={"Available Pups"} />
+        <Contact name={"Contact Us!"} />
       </Box>
     </Layout>
   );
