@@ -12,7 +12,6 @@ const OurDogs = (name, ltr = true, id, img) => {
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
-            background: "pink",
           }}
         >
           <Avatar
@@ -27,7 +26,6 @@ const OurDogs = (name, ltr = true, id, img) => {
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
-            background: "blue",
           }}
         >
           <Avatar

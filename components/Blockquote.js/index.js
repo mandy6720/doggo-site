@@ -1,9 +1,19 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import { Flare } from "@mui/icons-material";
 
 const Blockquote = (text) => {
   return (
-    <Box padding={2} sx={{ textAlign: "center", marginTop: "1em" }}>
+    <Box
+      padding={2}
+      sx={{
+        textAlign: "center",
+        marginTop: "1em",
+        width: "100%",
+        display: "flex",
+        alignItems: "center",
+      }}
+    >
       <Typography>
         <h2>
           "Finding a cute puppy is easy - finding a cute puppy that is healthy,

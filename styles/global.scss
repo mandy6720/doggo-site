@@ -73,3 +73,10 @@ color: white;
   margin: auto 9%;
   background-image: "/images/rustic-vintage-wooden-background_24837-264.png";
 }
+
+.container, .MuiBox-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
