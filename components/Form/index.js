@@ -1,15 +1,18 @@
-import React, { useState } from "react";
-import axios from "axios";
+import { useForm } from "react-hook-form";
 
-const Form = (props) => {
-  const [mailSent, setmailSent] = useState(false);
-  const [error, setError] = useState(null);
-  const [formData, setFormData] = useState({});
+export default function App() {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = (data) => console.log(data);
 
-  const { title, description, successMessage, errorMessage, fieldsConfig } =
-    props.config;
-};
-
-return hi;
-
-export default Form;
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <input {...register("firstName")} />
+      <select {...register("gender")}>
+        <option value="female">female</option>
+        <option value="male">male</option>
+        <option value="other">other</option>
+      </select>
+      <input type="submit" />
+    </form>
+  );
+}
