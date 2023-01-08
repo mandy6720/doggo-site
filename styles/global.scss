@@ -1,6 +1,9 @@
 @font-face {
   font-family: "Varsity";
-  src: url('../public/fonts/varsity_regular.ttf') format('truetype');}
+  font-style: normal;
+  font-display: fallback;
+  src: url('../public/fonts/varsity_regular.ttf') format('truetype');
+}
 
 html,
 body {
