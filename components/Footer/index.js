@@ -9,7 +9,9 @@ const Footer = () => {
         backgroundColor: "#222",
         color: "#fff",
         width: "100vw",
+        minWidth: "100vw",
         height: "100px",
+        zIndex: 1,
       }}
     >
       Footer
