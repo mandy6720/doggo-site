@@ -27,17 +27,19 @@ const About = (name, ltr = true, id, img) => {
             "@media screen and (min-width: 450px)": {
               flexDirection: "column",
             },
+            display: "flex",
           }}
         >
-          Our goal as a professional breeder is simple, to deliver American
-          Dobermans with the highest standard of quality to new owners. In order
-          to make such a commitment in raising pups for new homes, we made a
-          promise. The promise made is to ensure that with love and compassion,
-          these pups will be properly raised. The responsibility of bringing
-          fragile lives into the world is a lifelong commitment from the
-          Odremans. As we graduate a puppy from the litter to new families, we
-          make it our MISSION to always be a single solution resource to inform,
-          guide, and teach new members of our family!
+          Our goal as a professional breeder is simple. It’s to deliver American
+          Dobermans of the highest standard of quality to new owners. In order
+          to make such a commitment, we are focused on a simple promise--that
+          all of our pups will be properly raised with love and compassion.
+          <br />
+          The responsibility that comes with bringing these fragile young lives
+          into the world is a lifelong commitment from us at Odremans. As we
+          graduate a puppy from the litter to a new family, we make it our
+          MISSION to always be a single-solution resource to inform, guide, and
+          teach each new member of our ever-growing family.""
         </Box>
       </Box>
     </Box>
