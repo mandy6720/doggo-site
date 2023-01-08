@@ -1,6 +1,9 @@
 @font-face {
   font-family: "Varsity";
-  src: url('../public/fonts/varsity_regular.ttf') format('truetype');}
+  font-style: normal;
+  font-display: fallback;
+  src: url('../public/fonts/varsity_regular.ttf') format('truetype');
+}
 
 html,
 body {
@@ -34,6 +37,9 @@ img {
 h1,h2, button, .MuiAppBar-root, .MuiTypography-h6 {
   font-family: "Varsity" !important;
   font-weight: 400 !important;
+  .MuiDivider-fullWidth.MuiListItem-root {
+    color: #fafafa !important;
+  }
 }
 
 body, html {
