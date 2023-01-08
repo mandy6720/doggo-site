@@ -11,8 +11,8 @@ const Footer = () => {
         width: "100vw",
         minWidth: "100vw",
         height: "100px",
-        position: "fixed",
-        bottom: {0}
+        position: "absolute",
+        bottom: 0,
       }}
     >
       Footer
