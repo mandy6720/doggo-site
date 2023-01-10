@@ -6,7 +6,6 @@ import OurDogs from "../components/Cards/ourdogs";
 import Blockquote from "../components/Blockquote.js";
 import AvailablePups from "../components/Cards/available-pups";
 import Contact from "../components/Cards/contact";
-
 import Form from "../components/Form/";
 
 export default function Home(children) {
