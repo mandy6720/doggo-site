@@ -20,7 +20,6 @@ export default function Home(children) {
         <OurDogs name={"Our Doggos"} />
         <AvailablePups name={"Available Pups"} />
         <Contact name={"Contact Us!"} />
-        <Form />
       </Box>
     </Layout>
   );
