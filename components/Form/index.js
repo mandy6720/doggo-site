@@ -1,19 +1,27 @@
-import { useForm } from "react-hook-form";
-import { Grid } from "@mui/material";
+import * as React from "react";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
 
-export default function App() {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
-
+const Form = () => {
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register("firstName")} />
-      <select {...register("gender")}>
-        <option value="female">female</option>
-        <option value="male">male</option>
-        <option value="other">other</option>
-      </select>
-      <input type="submit" />
-    </form>
+    <Box
+      component="form"
+      sx={{
+        "& .MuiTextField-root": { m: 1, width: "25ch" },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+      <div>
+        <TextField
+          required
+          id="outlined-required"
+          label="Required"
+          defaultValue="Hello World"
+        />
+      </div>
+    </Box>
   );
-}
+};
+
+export default Form;
