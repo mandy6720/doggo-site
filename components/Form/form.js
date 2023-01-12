@@ -1,5 +1,5 @@
 import * as React from "react";
-import { TextField, Button, Container, Box } from "@mui/material";
+import { TextField, Button, Container, Box, Grid } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
@@ -19,7 +19,17 @@ const Form = () => {
     <ThemeProvider theme={theme}>
       <Container component="main">
         <CssBaseline />
-        <Box>hi mom</Box>
+        <Grid container>
+          <Grid item marginRight={2}>
+            <TextField id="name" label="name" type="text" />
+          </Grid>
+          <Grid item marginRight={2}>
+            <TextField id="email" label="email" type="email" marginRight={2} />
+          </Grid>{" "}
+          <Grid item marginRight={2}>
+            <TextField type="tel" label="phone" id="phone" marginRight={2} />
+          </Grid>
+        </Grid>
       </Container>
     </ThemeProvider>
   );
