@@ -1,6 +1,6 @@
 import { Typography, Box } from "@mui/material";
 import React from "react";
-import Form from "../Form/";
+import Form from "../Form/form";
 
 const Contact = () => {
   return (
@@ -10,8 +10,6 @@ const Contact = () => {
           <h1>Contact Us</h1>
         </Typography>
       </Box>
-      <Form />
-      <Box></Box>
     </>
   );
 };
