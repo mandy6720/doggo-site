@@ -32,7 +32,13 @@ const Form = () => {
           </Grid>
         </Grid>
         <Grid item marginRight={2} marginBottom={5}>
-          <TextField type="text" label="other" id="other" fullWidth />
+          <TextField
+            type="text"
+            label="other"
+            placeholder="anything else?"
+            id="other"
+            fullWidth
+          />
         </Grid>
         <Grid item>
           <Button variant="outlined" onClick={handleClick}>
