@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Container } from "@mui/material";
 
 const Footer = () => {
@@ -14,9 +13,7 @@ const Footer = () => {
         position: "absolute",
         bottom: 0,
       }}
-    >
-      Footer
-    </Container>
+    ></Container>
   );
 };
 

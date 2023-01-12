@@ -6,6 +6,7 @@ import OurDogs from "../components/Cards/ourdogs";
 import Blockquote from "../components/Blockquote.js";
 import AvailablePups from "../components/Cards/available-pups";
 import Contact from "../components/Cards/contact";
+import Form from "../components/Form/form";
 
 export default function Home(children) {
   return (
@@ -19,6 +20,7 @@ export default function Home(children) {
         <OurDogs name={"Our Doggos"} />
         <AvailablePups name={"Available Pups"} />
         <Contact name={"Contact Us!"} />
+        <Form />
       </Box>
     </Layout>
   );
