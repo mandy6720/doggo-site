@@ -6,7 +6,7 @@ const AvailablePups = () => {
     <Box id="ourdogs" className="card" spacing={2}>
       <Typography id="availablepups">
         <h1>Available Pups</h1>
-        We ain't got none
+        Coming in Spring!
       </Typography>
     </Box>
   );

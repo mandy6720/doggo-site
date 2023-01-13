@@ -1,4 +1,4 @@
-import { Box, Avatar, Typography } from "@mui/material";
+import { Box, Avatar } from "@mui/material";
 
 const OurDogs = (name, ltr = true, id, img) => {
   return (
@@ -6,12 +6,19 @@ const OurDogs = (name, ltr = true, id, img) => {
       <Box component="h1" id="about">
         Our Dogs
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "center" }} p={1}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "row",
+        }}
+        p={1}
+      >
         <Box
           sx={{
             display: "flex",
             alignItems: "center",
-            flexDirection: "column",
           }}
         >
           <Avatar

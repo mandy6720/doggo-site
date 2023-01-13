@@ -17,6 +17,10 @@ const Footer = () => {
       }}
     >
       <Box p={5} sx={{ display: "flex" }}>
+        <span>512-769-0544</span>
+        <span component="a" href="mailto:evelyn@odremansdobermans.com">
+          evelyn@odremansdobermans.com
+        </span>
         <span>By appointment only</span>
         <span>15101 Chaparral Dr. Leander TX 78641</span>
         <span>&copy; Amanda Bozzi 2023</span>
