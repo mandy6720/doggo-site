@@ -4,6 +4,7 @@ import { Container, Box } from "@mui/material";
 const Footer = () => {
   return (
     <Container
+      component="footer"
       sx={{
         backgroundColor: "#222",
         color: "#fff",
@@ -23,7 +24,7 @@ const Footer = () => {
         </span>
         <span>By appointment only</span>
         <span>15101 Chaparral Dr. Leander TX 78641</span>
-        <span>&copy; Amanda Bozzi 2023</span>
+        <span>&copy; Little Sheepdog Properties 2023</span>
       </Box>
       <Box>
         <iframe
