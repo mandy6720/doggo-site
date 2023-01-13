@@ -11,10 +11,10 @@ const Footer = () => {
         width: "100vw",
         minWidth: "100vw",
         minHeight: "100px",
-        position: "absolute",
+        // position: "absolute",
         display: "flex",
         justifyContent: "space-between",
-        bottom: 0,
+        // bottom: 0,
       }}
     >
       <Box p={5} sx={{ display: "flex" }}>
@@ -32,7 +32,7 @@ const Footer = () => {
           width="450"
           height="300"
           sx={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
