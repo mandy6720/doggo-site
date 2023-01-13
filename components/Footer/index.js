@@ -13,7 +13,9 @@ const Footer = () => {
         position: "absolute",
         bottom: 0,
       }}
-    ></Container>
+    >
+      i an the footer :)
+    </Container>
   );
 };
 
