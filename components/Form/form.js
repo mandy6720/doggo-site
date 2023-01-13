@@ -19,7 +19,11 @@ const Form = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="form">
+      <Container
+        component="form"
+        className="contact-form"
+        sx={{ maxWidth: 600 }}
+      >
         <Grid container>
           <Grid item marginRight={2}>
             <TextField id="name" label="name" type="text" />
@@ -38,6 +42,7 @@ const Form = () => {
             placeholder="anything else?"
             id="other"
             fullWidth
+            multiline
           />
         </Grid>
         <Grid item>
