@@ -39,14 +39,7 @@ export default function Layout({ children }) {
       <Box
         sx={{ height: "60px", width: "100vw", position: "absolute", bottom: 0 }}
       >
-        <Footer
-          sx={{
-            height: "60px",
-            width: "100vw",
-            position: "absolute",
-            bottom: 0,
-          }}
-        />
+        <Footer />
       </Box>
     </>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "@mui/material";
+import { Container, Box } from "@mui/material";
 
 const Footer = () => {
   return (
@@ -9,12 +9,16 @@ const Footer = () => {
         color: "#fff",
         width: "100vw",
         minWidth: "100vw",
-        height: "100px",
+        minHeight: "100px",
         position: "absolute",
         bottom: 0,
       }}
     >
-      i an the footer :)
+      <Box p={5}>
+        <span>By appointment only</span>
+        <span>15101 Chaparral Dr. Leander TX 78641</span>
+        <span>&copy; Amanda Bozzi 2023</span>
+      </Box>
     </Container>
   );
 };
