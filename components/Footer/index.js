@@ -11,6 +11,8 @@ const Footer = () => {
         minWidth: "100vw",
         minHeight: "100px",
         position: "absolute",
+        display: "flex",
+        justifyContent: "space-between",
         bottom: 0,
       }}
     >
