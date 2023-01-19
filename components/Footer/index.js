@@ -32,7 +32,7 @@ const Footer = () => {
           width="450"
           height="300"
           sx={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
