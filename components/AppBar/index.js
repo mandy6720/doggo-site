@@ -37,7 +37,7 @@ export default function DrawerAppBar(props) {
         </Typography>
       </a>
       <Divider />
-      <List>
+      <List classNmae="navlinks">
         {navItems.map((item) => (
           <ListItem key={item.link} disablePadding>
             <ListItemButton
