@@ -14,12 +14,18 @@ const Footer = () => {
         position: "absolute",
         display: "flex",
         justifyContent: "space-between",
-        bottom: 0,
+        bottom: "-90px",
       }}
     >
-      <Box p={5} sx={{ display: "flex" }}>
-        <span>512-769-0544</span>
-        <span component="a" href="mailto:evelyn@odremansdobermans.com">
+      <Box p={5} sx={{ display: "flex", position: "fixed" }}>
+        <span component="a" href="tel:5127690544" sx={{ cursor: "pointer" }}>
+          512-769-0544
+        </span>
+        <span
+          component="a"
+          href="mailto:evelyn@odremansdobermans.com"
+          sx={{ cursor: "pointer" }}
+        >
           evelyn@odremansdobermans.com
         </span>
         <span>By appointment only</span>

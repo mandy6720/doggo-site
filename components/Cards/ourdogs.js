@@ -11,6 +11,7 @@ const OurDogs = (name, ltr = true, id, img) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          padding: "8px",
           flexDirection: "row",
         }}
         p={1}
