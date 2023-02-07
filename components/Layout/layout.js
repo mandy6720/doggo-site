@@ -41,7 +41,7 @@ export default function Layout({ children }) {
       <Box
         sx={{
           width: "100vw | 100%",
-          position: "fixed",
+          position: "flex",
           bottom: 0,
         }}
         component="footer"
