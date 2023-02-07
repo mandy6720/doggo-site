@@ -4,7 +4,7 @@ const OurDogs = (name, ltr = true, id, img) => {
   return (
     <Box id="ourdogs" className="card" spacing={2}>
       <Box component="h1" id="about">
-        Our Dogs
+        Our Dogs (more info coming soon!)
       </Box>
       <Box
         sx={{
