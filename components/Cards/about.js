@@ -11,15 +11,16 @@ const styles = (theme) => ({
 
 const About = (name, ltr = true, id, img) => {
   return (
-    <Box id="about" className="card" spacing={2}>
+    <Box id="about" className="card" spacing={2} sx={{ display: "flex" }}>
       <Box component="h1" id="about">
         About Us
       </Box>
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", flexDirection: "row" }}>
         <Avatar
           variant="circular"
           src="images/genericdobie.png"
-          sx={{ width: 200, height: 200 }}
+          sx={{ width: 200, height: 200, display: "inline-block" }}
+          p={3}
         />
         <Box
           sx={{
@@ -27,7 +28,7 @@ const About = (name, ltr = true, id, img) => {
             "@media screen and (min-width: 450px)": {
               flexDirection: "column",
             },
-            display: "flex",
+            display: "inline-block",
           }}
         >
           Our goal as a professional breeder is simple. It’s to deliver American
