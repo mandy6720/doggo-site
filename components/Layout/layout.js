@@ -34,14 +34,18 @@ export default function Layout({ children }) {
             height={300}
           />
         </Box>
-        <main className="body" sx={{ position: "relative" }}>
+        <main
+          className="body"
+          sx={{ position: "relative", marginBottom: "36px" }}
+        >
           {children}
         </main>
       </div>
       <Box
         sx={{
+          height: "300px",
           width: "100vw | 100%",
-          position: "flex",
+          position: "fixed",
           bottom: 0,
         }}
         component="footer"
