@@ -40,7 +40,7 @@ export default function Layout({ children }) {
       </div>
       <Box
         sx={{
-          height: "60px",
+          height: "300px",
           width: "100vw | 100%",
           position: "fixed",
           bottom: 0,
