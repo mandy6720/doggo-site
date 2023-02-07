@@ -15,9 +15,15 @@ const Footer = () => {
         display: "flex",
         justifyContent: "space-between",
         bottom: "-90px",
+        "@media screen and (min-width: 450px)": {
+          flexDirection: "row",
+        },
       }}
     >
-      <Box p={5} sx={{ display: "flex", position: "fixed" }}>
+      <Box
+        p={5}
+        sx={{ display: "flex", position: "fixed", backgroundColor: "#222" }}
+      >
         <span component="a" href="tel:5127690544" sx={{ cursor: "pointer" }}>
           512-769-0544
         </span>
