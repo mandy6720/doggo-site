@@ -10,7 +10,7 @@ export const siteTitle = "Odreman's Dobermans";
 
 export default function Layout({ children }) {
   return (
-    <>
+    <Box>
       <div className={styles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
@@ -34,21 +34,14 @@ export default function Layout({ children }) {
             height={300}
           />
         </Box>
-        <main className="body" sx={{ position: "relative" }}>
+        <main
+          className="body"
+          sx={{ position: "relative", marginBottom: "36px" }}
+        >
           {children}
         </main>
       </div>
-      <Box
-        sx={{
-          height: "60px",
-          width: "100vw | 100%",
-          position: "fixed",
-          bottom: 0,
-        }}
-        component="footer"
-      >
-        <Footer />
-      </Box>
-    </>
+      <Footer />
+    </Box>
   );
 }
